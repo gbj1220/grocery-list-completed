@@ -1,6 +1,6 @@
 import React from "react";
 
-function userInput() {
+function UserInput() {
   function handleUserSubmit(event) {
     event.preventDefault();
   }
@@ -13,4 +13,4 @@ function userInput() {
   );
 }
 
-export default userInput;
+export default UserInput;
