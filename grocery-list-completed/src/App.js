@@ -1,4 +1,7 @@
-import logo from "./logo.svg";
+import { useState, useEffect } from "react";
+import { GroceryInput } from "./GroceryInput.js";
+import { GroceryItems } from "./GroceryItems.js";
+
 import "./App.css";
 
 function App() {
@@ -12,6 +15,8 @@ function App() {
       groceryItem: "oranges",
     },
   ];
+
+  const [groceryItems, setGroceryItems] = useState(hardCodedData);
 
   return <div className='App'></div>;
 }
