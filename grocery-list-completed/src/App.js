@@ -31,6 +31,8 @@ function App() {
     let nonDeletedItems = groceryItem.filter((item) => {
       if (item.id !== id) {
         return item;
+      } else {
+        return null;
       }
     });
     setGroceryItem(nonDeletedItems);
@@ -39,9 +41,10 @@ function App() {
   function lineThrough(id) {
     let newArray = groceryItem.map((item) => {
       if (item.id === id) {
-        item.isCompleted = !item.isCompleted;
+        return (item.isCompleted = !item.isCompleted);
+      } else {
+        return null;
       }
-      return item;
     });
     setGroceryItem(newArray);
   }

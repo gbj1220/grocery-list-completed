@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { UserInputContext } from "./context";
 
 function UserInput() {
-  const { addItem, deleteItem } = useContext(UserInputContext);
+  const { addItem } = useContext(UserInputContext);
 
   const [item, setItem] = useState("");
 
