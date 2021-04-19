@@ -11,7 +11,7 @@ const dummyData = [
   },
   {
     id: 2,
-    item: "apples",
+    item: "apple",
   },
 ];
 
@@ -23,7 +23,9 @@ function App() {
   }
 
   function showGroceries() {
-    return <GroceryListItem />;
+    return groceryItem.map((x) => {
+      return <GroceryListItem key={x.id} />;
+    });
   }
   console.log(groceryItem);
 
